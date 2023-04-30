@@ -1,6 +1,7 @@
 html, body, *, body *, body * {
 
     max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 #titulo {
@@ -91,7 +92,7 @@ body, html {
     }
     
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
       }
     
 
