@@ -4,11 +4,10 @@ html, body, *, body *, body * {
     overflow-x: hidden;
 }
 
-a {
+#contactright a {
 
     color: white !important;
 }
-
 #aboutright ul, li {
 
     list-style: disc !important;
