@@ -84,7 +84,7 @@ body, html {
 
 
 .material-symbols-outlined {
-    background-color: white;
+    background-color: lightcyan;
     border-radius: 50%;
     padding: 10pt;
     margin: 10pt;
@@ -221,19 +221,26 @@ body, html {
 
 #projects {
 
-    background-color: brown;
-    padding-top: 30pt;
+    background: #c31432; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c31432, #240b36); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    padding-top: 30pt;
     height: 100vh;
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  /* Aplicamos el efecto difuminado al borde */
 }
 
 #about {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+      
 
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 'labout rabout';
     height: 100vh;
-    background-color: darkblue;
-    color: white;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
     padding-top: 20pt;
     padding-right: 50pt ;
 }
@@ -356,14 +363,16 @@ grid-area: labout;
     }
 
     #contact {
-
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas: 'rcontact lcontact';
         height: 100vh !important;
         color: white;
-        background-color: darkgreen;
-    }
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
 
     @media (min-resolution: 120dpi) {
 
