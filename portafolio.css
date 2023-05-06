@@ -433,51 +433,34 @@ grid-area: labout;
 
 
 
-#botonesTarjeta {
-    display: grid;
-    grid-template-areas:
-        'a1 a2'
-        'a3 a3';
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    gap: 5pt;
+
+
+#project2 {
+
+    display: block !important;
+
+}
+
+#project1 {
+
+    display: block !important;
+
 }
 
 #botonesTarjeta2 {
-    display: grid;
-    grid-template-areas:
-        'a12 a22'
-        'a32 a32';
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    gap: 5pt;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+
 }
 
+#botonesTarjeta {
 
-#a1 {
-    grid-area: a1;
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
 }
-
-#a2 {
-    grid-area: a2;
-}
-
-#a3 {
-    grid-area: a3;
-}
-
-#a12 {
-    grid-area: a12;
-}
-
-#a22 {
-    grid-area: a22;
-}
-
-#a32 {
-    grid-area: a32;
-}
-
 
 .navbar-collapse {
     margin-left: 60px;
@@ -485,13 +468,6 @@ grid-area: labout;
   
 
 
-#readme {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 10pt ;
-    width: 100%;
-}
 
 .card-title {
 
