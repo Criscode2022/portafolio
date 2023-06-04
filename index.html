@@ -23,9 +23,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul id="size" class="navbar-nav mb-2 mb-lg-0" style="margin-left: -325px;">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#projects">Proyectos</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="#about">Acerca de mí</a>
         </li>
@@ -48,17 +46,26 @@
 
 
 <section id="carousel">
-    <div id="carouselExampleCaptions" data-bs-theme="dark" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" theme  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
+  <div id="carouselExampleCaptions" data-bs-theme="dark" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="https://criscode2022.github.io/Plan-de-entrenamiento/" target="_blank"><img src="assets\fotoPlan.png" class="d-block w-100" alt="..."></a> 
             <div class="carousel-caption d-none d-md-block">
               <h5>Plan de entrenamiento</h5>
               <p class="card-text">Responsive Single-Page Application (SPA) realizada con el framework Angular en TypeScript y con las librerías Angular Material y SheetJS que consume una API propia de solo lectura para peticiones Get a través del módulo de Angular HTTP Client.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://tusempleados.atwebpages.com" target="_blank"><img src="assets/EmpleadosD.png" class="d-block w-100" alt="..."></a> 
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Gestión de Empleados</h5>
+              <p class="card-text">Aplicación web Full Stack con base de datos MySQL e inicio de sesión que permite gestionar tus propios empleados, asociados de forma única a tu usuario. Realizada con HTML, CSS, Javascript, PHP, MySQL y la librería Bootstrap 5.</p>
             </div>
           </div>
           <div class="carousel-item"  data-bs-theme="dark">
@@ -85,19 +92,28 @@
 <section id="carouselMobile">
   <div id="carouselExampleCaptionsMobile" data-bs-theme="dark" class="carousel slide">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptionsMobile" theme  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptionsMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptionsMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptionsMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="https://criscode2022.github.io/Plan-de-entrenamiento/" target="_blank"><img src="assets\fotoPlanM.jpg" class="d-block w-100" alt="..."></a> 
+        <a href="https://criscode2022.github.io/Plan-de-entrenamiento/" target="_blank"><img src="assets/fotoPlanM.jpg" class="d-block w-100" alt="..."></a> 
         <div class="carousel-caption d-none d-md-block">
           <h5>Plan de entrenamiento</h5>
           <p class="card-text">Responsive Single-Page Application (SPA) realizada con el framework Angular en TypeScript y con las librerías Angular Material y SheetJS que consume una API propia de solo lectura para peticiones Get a través del módulo de Angular HTTP Client.</p>
         </div>
       </div>
-      <div class="carousel-item"  data-bs-theme="dark">
-        <a href="https://criscode2022.github.io/contadorRubik/" target="_blank"><img src="assets\fotoRubikM.jpg" class="d-block w-100" alt="..."></a> 
+      <div class="carousel-item">
+        <a href="https://tusempleados.atwebpages.com" target="_blank"><img src="assets/EmpleadosM.jpg" class="d-block w-100" alt="..."></a> 
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Gestión de Empleados</h5>
+          <p class="card-text">Aplicación web Full Stack con base de datos MySQL e inicio de sesión que permite gestionar tus propios empleados, asociados de forma única a tu usuario. Realizada con HTML, CSS, Javascript, PHP, MySQL y la librería Bootstrap 5.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="https://criscode2022.github.io/contadorRubik/" target="_blank"><img src="assets/fotoRubikM.jpg" class="d-block w-100" alt="..."></a> 
         <div id="div1" class="carousel-caption d-none d-md-block">
           <h5>GaliRubik</h5>
           <p class="card-text">Responsive Single-Page Application (SPA) realizada con el framework Angular en TypeScript y con las librerías Angular Material y SheetJS que trabaja sobre el Local Storage con operaciones de escritura, lectura y descarga de datos.</p>
@@ -113,7 +129,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-</section> 
+</section>
+
 
 <section id="projects">
 
@@ -166,9 +183,9 @@
 
       <h2 id="h2about">Acerca de mí</h2>
 
-      <p>Filólogo de formación que se está reinventando en el ámbito laboral y personal al encontrar una gran pasión en la programación web. Filólogo de formación que se está reinventando en el ámbito laboral y personal al encontrar una gran pasión en la programación web. Después de haber cursado el Certificado de Profesionalidad de Nivel 3 "Desarrollo de aplicaciones con tecnologías web (IFCD0210)", actualmente continúo formándome a través de múltiples cursos online con gran vocación autodidacta y del curso del CNTG "XTIFCD2202: Desenvolvemento de aplicacións web con Angular (Teleformación)".</p> 
+      <p>Programador que se está reinventando en el ámbito laboral y personal al encontrar una gran pasión y oportunidad en la programación web. Después de haber cursado el Certificado de Profesionalidad de Nivel 3 "Desarrollo de aplicaciones con tecnologías web (IFCD0210)", actualmente continúo formándome a través de múltiples cursos online con gran vocación autodidacta y del curso del CNTG "XTIFCD2202: Desenvolvemento de aplicacións web con Angular (Teleformación)".</p> 
 
-       <p>De amplia formación humanista, considero que mi experiencia anterior y mi vocación actual pueden dotarme de grandes aptitudes para el trabajo de programador con pasión por el trabajo en equipo. Además, desde esa formación humanística y artística tengo también mucho interés en el diseño UX/UI a fin de hacer de la navegación web una experiencia positiva que transmita emociones y los valores de las marcas en equidad para todos los usuarios. Para conseguir este objetivo, considero que la accesibilidad y la igualdad de oportunidades ocupa un lugar central en el desarrollo web, poniendo al usuario en el centro.</p>
+       <p>De amplia formación humanista, graduado en Filología Gallego-Portuguesa, considero que mi experiencia anterior y mi vocación actual pueden dotarme de grandes aptitudes para el trabajo de programador con pasión por el trabajo en equipo. Además, desde esa formación humanística y artística tengo también mucho interés en el diseño UX/UI a fin de hacer de la navegación web una experiencia positiva que transmita emociones y los valores de las marcas en equidad para todos los usuarios. Para conseguir este objetivo, considero que la accesibilidad y la igualdad de oportunidades ocupa un lugar central en el desarrollo web, poniendo al usuario en el centro.</p>
 
        <h3>Destrezas y aptitudes</h3>
 
