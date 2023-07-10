@@ -40,6 +40,14 @@ html, body, *, body *, body * {
     
 }
 
+#primPag * {
+
+height: 100% !important;
+overflow: hidden !important;
+
+
+}
+
 #subtitulo {
 
 
@@ -481,7 +489,12 @@ grid-area: labout;
 
 #carousel {
     background-color: gray;
-    height: 100% !important;
+    height: 75vh !important;
+
+}
+
+#carousel * {
+    max-height: 75vh !important;
 
 }
 
@@ -498,18 +511,62 @@ grid-area: labout;
     .carousel-item {
 
         height: 100% !important;
+        overflow: hidden !important;
+
     }
    
     .carousel-item img {
-    opacity: 0.7;
-    height: 100% !important;
+        transition: transform 0.3s, opacity 0.3s;  /* Añadimos una transición suave */
+        height: 100%;
+        overflow: hidden !important;
     }
     
     .carousel-item img:hover {
-    opacity: 0.5;
+        opacity: 0.5;  /* Conservamos el cambio de opacidad */
+        transform: scale(1.07);  /* Hacemos que la imagen se amplíe un poco al pasar el ratón por encima */
+        overflow: hidden !important;
+
     }
+    
     
     .carousel-caption {
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.9 !important;
- }
+    overflow: hidden !important;
+
+    }
+    
+    #logos img {
+        --b: 6px;  /* the border thickness*/
+        --g: 10px; /* the gap */
+        --c: #0E8D94;
+            padding: calc(var(--b) + var(--g));
+            --_l: var(--c) var(--b),#0000 0 calc(100% - var(--b)), var(--c) 0;
+            background:
+              linear-gradient(var(--_l)) 50%/calc(100% - var(--_i,80%)) 100% no-repeat,
+              linear-gradient(90deg,var(--_l)) 50% var(--_i,-100%)/100% 200% no-repeat;  
+            --_m:
+              conic-gradient(at 50% var(--b),#0000 25%,#000 0) calc(50% + var(--_i,50%))/200%,
+              conic-gradient(at 50% var(--b),#000 75%,#0000 0) calc(50% - var(--_i,50%))/200%; 
+            -webkit-mask: var(--_m);
+                    mask: var(--_m);
+            transition: 
+              .3s calc(.6s - var(--_t,.6s)) -webkit-mask-position, 
+              .3s .3s background-position,
+              .3s var(--_t,.6s) background-size,
+              .4s transform;
+            cursor: pointer;
+            margin: 10pt;
+          }
+
+    #logos img:hover {
+            --_i: 0%;
+            --_t: 0s;
+          }
+
+        
+          
+
+    
+
+ 
