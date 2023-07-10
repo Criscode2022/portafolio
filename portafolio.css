@@ -551,17 +551,28 @@ grid-area: labout;
             -webkit-mask: var(--_m);
                     mask: var(--_m);
             transition: 
-              .3s calc(.6s - var(--_t,.6s)) -webkit-mask-position, 
-              .3s .3s background-position,
-              .3s var(--_t,.6s) background-size,
-              .4s transform;
+              .2s calc(.6s - var(--_t,.6s)) -webkit-mask-position, 
+              .2s .3s background-position,
+              .2s var(--_t,.6s) background-size,
+              .3s transform;
             cursor: pointer;
             margin: 10pt;
+            
           }
 
     #logos img:hover {
             --_i: 0%;
             --_t: 0s;
+          }
+
+          @media (max-width: 404px) {
+
+            #logos {
+
+position: relative;
+left: 36pt;            }
+
+
           }
 
         
