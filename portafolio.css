@@ -519,20 +519,26 @@ grid-area: labout;
         transition: transform 0.3s, opacity 0.3s;  /* Añadimos una transición suave */
         height: 100%;
         overflow: hidden !important;
+        opacity: 0.8;
     }
     
     .carousel-item img:hover {
-        opacity: 0.5;  /* Conservamos el cambio de opacidad */
+        opacity: 0.4;  /* Conservamos el cambio de opacidad */
         transform: scale(1.07);  /* Hacemos que la imagen se amplíe un poco al pasar el ratón por encima */
         overflow: hidden !important;
 
     }
     
+    h4 {
+        overflow: hidden !important;
+    }
     
     .carousel-caption {
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 0.9 !important;
+    background-color: rgba(255, 255, 255, 0.815);
     overflow: hidden !important;
+    opacity: 2 !important;
+    z-index: 444 !important;
+    padding: 10pt;
 
     }
     
